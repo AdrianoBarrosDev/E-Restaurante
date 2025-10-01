@@ -1,28 +1,40 @@
 import styled from "styled-components";
 
 const DivHead = styled.div`
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     .top {
         background-image: url("/images/banner_top.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         height: 45vw;
-        min-height: 450px;
-        padding: 30px 30px 0px 30px;
+        min-height: 465px;
+        width: 100%;
+        max-width: 100vw;
     }
 
     .header {
+        padding: 0 !important;
         height: 70px;
-        width: 100%;
+        width: 98%;
+        max-width: 100vw;
         border-radius: 50px;
         background-color:#1C1C1C;
         display: flex;
         align-items: center;
         color: white;
+        padding: 0px 20px;
+        margin-top: 20px;
     }
 
     .abas {
-        margin-left: auto; /* joga as abas pra direita */
+        margin-left: auto;
         display: flex;
         gap: 3vw;
         margin-right: 40px;
@@ -46,14 +58,16 @@ const DivHead = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 10%;
     }
 
     .img-logo{
-        width: 40%;
+        width: 37%;
         min-width: 300px
     }
 
     .content-banner{
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -67,24 +81,24 @@ const DivHead = styled.div`
         font-style: bold;
         color: white;
         font-size: 4vw;
-        width: 33%;
+        width: 30%;
         .destaque{
             color:#EFC32F;
         }
     }
 
     .button_cardapio{
-        width: 45%;
-        height: 3.5vw;
+        width: 250px;
+        height: 4vw;
         min-height: 50px;
         background-color: #E7B91F;
         border: none;
-        outline: solid 3px white;
-        outline-offset: -8px;
-        border-radius: 10px;
+        outline: solid 2px white !important; 
+        outline-offset: -10px;
+        border-radius: 15px;
         font-weight: bold;
         color: white;
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
 
     .judson{
@@ -92,23 +106,22 @@ const DivHead = styled.div`
         font-size: 20px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 766px) {
         .low_content{
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .escrita-header{
             display: none;
         }
 
-        .button_cardapio{
-            min-width: 144px;
-            min-height: 44px;
-            font-size: 15px;
+        .button_cardapio {
+            width: 100%;
+            max-width: 250px;
+            font-size: 10px;
         }
 
-        .judson{
-            display: none;
-        }
     }
   
 `;
