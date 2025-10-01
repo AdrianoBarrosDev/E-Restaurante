@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { BannerTop } from "../componets/BannerTop";
-import { ContentPadrela } from "../componets/ContentPadrela";
-import { ContentServimos } from "../componets/ContentServimos";
-import { InfoPadrela } from "../componets/InfoPadrela";
+import { BannerTop } from "../components/BannerTop";
+import { ContentPadrela } from "../components/ContentPadrela";
+import { ContentServimos } from "../components/ContentServimos";
+import { InfoPadrela } from "../components/InfoPadrela";
 
 const DivHead = styled.div`
 `;

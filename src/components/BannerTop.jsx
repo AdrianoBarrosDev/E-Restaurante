@@ -45,7 +45,7 @@ const DivHead = styled.div`
         border: none;
         color: white;
         font-family: 'poppins';
-        font-size: 14px;
+        font-size: clamp(8px, 3vw, 15px);
         font-weight: bold;
         cursor: pointer;
     }
@@ -71,6 +71,7 @@ const DivHead = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        overflow-x: hidden;
     }
 
 
@@ -81,16 +82,13 @@ const DivHead = styled.div`
         font-style: bold;
         color: white;
         font-size: 4vw;
-        width: 30%;
-        .destaque{
-            color:#EFC32F;
-        }
     }
 
     .button_cardapio{
         width: 250px;
         height: 4vw;
         min-height: 50px;
+        min-width: 130px;
         background-color: #E7B91F;
         border: none;
         outline: solid 2px white !important; 
@@ -106,7 +104,25 @@ const DivHead = styled.div`
         font-size: 20px;
     }
 
-    @media screen and (max-width: 766px) {
+    .ativo {
+        background-color: #F2CE56;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 15px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 4vw;
+        color: white;
+        font-weight: bold;
+    }
+
+    .destaque{
+        color:#EFC32F;
+    }
+
+    @media (max-width: 767px) {
         .low_content{
             flex-direction: column;
             justify-content: center;
@@ -116,10 +132,26 @@ const DivHead = styled.div`
             display: none;
         }
 
+        .content-banner {
+            justify-content: center;
+        }
+
         .button_cardapio {
-            width: 100%;
+            width: 40%;
             max-width: 250px;
             font-size: 10px;
+        }
+
+    }
+
+    @media (max-width: 575px) {
+        .button_cardapio {
+            border-radius: 12px;
+            outline-offset: -7px;
+        }
+
+        .ativo {
+            padding: 5px 5%;
         }
 
     }
@@ -137,17 +169,22 @@ export function BannerTop() {
                             <span className="judson d-none d-lg-block">PADRELA</span>
 
                             <div className="abas">
-                                <button  className="aba-button">Conhecer</button>
-                                <button  className="aba-button">Cardápio</button>
-                                <button  className="aba-button">Contato</button>
+                                <button className="aba-button ativo">Conhecer</button>
+                                <button className="aba-button">Cardápio</button>
+                                <button className="aba-button">Contato</button>
                             </div>
                             
                         </div>
-                        <div className="low_content col-12">
-                            <img className='img-logo col-12 col-md-6' src="images/padrela-logo.png" alt="" />
-                            <div className="escrita-banner col-md-6">
+                        <div className="row justify-content-center justify-content-md-around align-items-center">
+                            <div className="img-logo col-12 col-md-6">
+                                <img className='w-100' src="images/padrela-logo.png" alt="" />
+                            </div>
+                            <div className="escrita-banner col-12 col-md-6">
                                 <div className="escrita-header d-none d-md-block">
-                                    <strong>Descubra <span className="destaque">Novos sabores</span></strong>
+                                    <div>
+                                        <p>Descubra</p>
+                                        <p className="destaque">Novos sabores</p>
+                                    </div>
                                 </div>
                                 <button className="button_cardapio">Ver cardápio</button>
                             </div>

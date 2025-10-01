@@ -1,6 +1,7 @@
 body{
     background-color: #FFF8E0 !important;
     font-family: 'Poppins';
+    overflow-x: hidden;
 }
 
 
