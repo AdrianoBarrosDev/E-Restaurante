@@ -4,4 +4,13 @@ body{
     overflow-x: hidden;
 }
 
+.linearTitle {
+    display: inline-block;
+    background: linear-gradient(90deg, #D9A700 27%, #EFC32F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 

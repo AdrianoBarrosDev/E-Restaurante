@@ -118,10 +118,6 @@ const DivHead = styled.div`
         font-weight: bold;
     }
 
-    .destaque{
-        color:#EFC32F;
-    }
-
     @media (max-width: 767px) {
         .low_content{
             flex-direction: column;
@@ -164,29 +160,29 @@ export function BannerTop() {
             <DivHead>
                 <div className='top'>
                     <div className="content-banner row">
-                        <div className="header">
+                        <div className="header" data-aos="fade-up">
                             <img className='img-logo-header' src="images/padrela-logo.png" alt="" />
                             <span className="judson d-none d-lg-block">PADRELA</span>
 
                             <div className="abas">
-                                <button className="aba-button ativo">Conhecer</button>
-                                <button className="aba-button">Cardápio</button>
+                                <button className="aba-button ativo" onClick={() => window.location.href = '/'}>Conhecer</button>
+                                <button className="aba-button" onClick={() => window.location.href = '/cardapio'}>Cardápio</button>
                                 <button className="aba-button">Contato</button>
                             </div>
                             
                         </div>
                         <div className="row justify-content-center justify-content-md-around align-items-center">
-                            <div className="img-logo col-12 col-md-6">
+                            <div className="img-logo col-12 col-md-6" data-aos="fade-right">
                                 <img className='w-100' src="images/padrela-logo.png" alt="" />
                             </div>
-                            <div className="escrita-banner col-12 col-md-6">
+                            <div className="escrita-banner col-12 col-md-6" data-aos="fade-left">
                                 <div className="escrita-header d-none d-md-block">
                                     <div>
                                         <p>Descubra</p>
-                                        <p className="destaque">Novos sabores</p>
+                                        <p className="destaque linearTitle">Novos sabores</p>
                                     </div>
                                 </div>
-                                <button className="button_cardapio">Ver cardápio</button>
+                                <button className="button_cardapio" onClick={() => window.location.href = '/cardapio'}>Ver cardápio</button>
                             </div>
                         </div>
                     </div>

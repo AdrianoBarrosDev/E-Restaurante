@@ -77,6 +77,60 @@ const DivHead = styled.div`
         right: 20vw;
         padding: 40px;
     }
+
+    
+    .menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6px 100px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .menu-name {
+        font-weight: bold;
+        font-size: 16px;
+        color: #3b2c1a;
+        display: flex;
+        align-items: center;
+        width: 1000%;
+    }
+
+    .menu-name::after {
+    content: "";
+        flex: 1;
+        border-bottom: 1px dashed #aaa;
+        margin: 0 8px;
+    }
+
+    .menu-info {
+        max-width: 70%;
+    }
+
+    .menu-info h3 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #3b2c1a;
+    }
+
+    .menu-info p {
+        margin: 3px 0 0 0;
+        font-size: 13px;
+        color: #7a6f5a;
+    }
+
+    .menu-price {
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        color: #3b2c1a;
+        white-space: nowrap;
+        background-color: #FFF8E0;
+        bottom: 10px;
+        left: 100px;
+        width: 300px;
+    }
     
     @media screen and (max-width: 768px) {
         .cardapio-title{
@@ -123,8 +177,12 @@ export function ContentCardapio() {
                 Hamburguer
                 <img className="group-88-img d-none d-md-block" src="images/Group 88.png" alt="" />
             </div>
-            <div className="content-menu">
-                aaaaaaaaaaaaa
+            <div className="menu-item">
+                <div className="menu-info">
+                    <div className="menu-name">Café Expresso</div>
+                    <p>Café na hora com o gosto de saber expresso.</p>
+                </div>
+                <div className="menu-price">R$ 14,99</div>
             </div>
             <div className="menu-class">
                 <img className="group-88-img1 d-none d-md-block" src="images/Group 88.png" alt="" />

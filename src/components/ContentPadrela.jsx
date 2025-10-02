@@ -154,14 +154,15 @@ export function ContentPadrela() {
         <div
           ref={textRef}
           className="content-text"
+          data-aos="fade-up"
         >
-          <h2 className="content-title">Nossa História</h2>
+          <h2 className="content-title linearTitle">Nossa História</h2>
           <p>Tudo começou há alguns anos, quando o cheiro de pão quentinho ainda era apenas um sonho dentro do forno. O Padrela nasceu do desejo de levar à mesa das famílias muito mais do que produtos: queríamos compartilhar carinho, tradição e aquele sabor que lembra a casa da gente.</p>
           <p>No início, éramos apenas um pequeno espaço de bairro, com fornadas simples, mas cheias de dedicação. Com o tempo, fomos crescendo, e junto com a padaria trouxemos novidades para atender cada momento do seu dia. Hoje, além dos pães fresquinhos e bolos caseiros, servimos almoços saborosos, pizzas irresistíveis e lanches preparados na hora.</p>
           <p>Nossa missão continua a mesma: oferecer qualidade, variedade e um ambiente acolhedor, onde cada cliente se sinta em casa. Mais do que uma padaria, somos um ponto de encontro para famílias e amigos, um lugar onde boas histórias e bons sabores se encontram todos os dias.</p>
         </div>
 
-        <div className="content-img overflow-hidden w-100">
+        <div className="content-img overflow-hidden w-100" data-aos="zoom-in">
           <img className="img" src="images/content-img.png" alt="" />
         </div>
       </div>

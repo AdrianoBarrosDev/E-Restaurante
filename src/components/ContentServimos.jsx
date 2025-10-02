@@ -107,34 +107,34 @@ export function ContentServimos() {
   return (
     <DivHead>
       <div className="content-servimos">
-        <div className="servimos-title text-center text-xxl-start">Servimos</div>
+        <div className="servimos-title text-center text-xxl-start linearTitle" data-aos="fade-up">Servimos</div>
         <div className="servimos-imgs">
-          <div className="serv">
+          <div className="serv" data-aos="fade-up">
             <img className="servimos-img" src="images/Matinais.png" alt="Matinais"/>
             <div className="serv-title">Matinais</div>
           </div>
-          <div className="serv">
+          <div className="serv" data-aos="fade-up">
             <img className="servimos-img" src="images/Almoço.png" alt="Almoço"/>
             <div className="serv-title">Almoço</div>
           </div>
-          <div className="serv">
+          <div className="serv" data-aos="fade-up">
             <img className="servimos-img" src="images/Lanches.png" alt="Lanches"/>
             <div className="serv-title">Lanches</div>
           </div>
-          <div className="serv">
+          <div className="serv" data-aos="fade-up">
             <img className="servimos-img" src="images/Doces.png" alt="Doces"/>
             <div className="serv-title">Doces</div>
           </div>
-          <div className="serv">
+          <div className="serv" data-aos="fade-up">
             <img className="servimos-img" src="images/Pizzas.png" alt="Pizzas"/>
             <div className="serv-title">Pizzas</div>
           </div>
-          <div className="serv">
+          <div className="serv" data-aos="fade-up">
             <img className="servimos-img" src="images/Sopas.png" alt="Sopas"/>
             <div className="serv-title">Sopas</div>
           </div>
         </div>
-        <button className="serv-button-cardapio">Ver Cardápio</button>
+        <button className="serv-button-cardapio" data-aos="fade-up" onClick={() => window.location.href = '/cardapio'}>Ver Cardápio</button>
       </div>
     </DivHead>
   );

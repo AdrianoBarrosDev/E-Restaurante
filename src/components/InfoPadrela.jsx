@@ -107,28 +107,28 @@ const DivHead = styled.div`
 export function InfoPadrela() {
   return (
     <DivHead>
-        <div>
+        <div data-aos="zoom-out">
             <img className="info-img d-none d-sm-block" src="images/info-padrela.png" alt="" />
             <img className="info-img d-block d-sm-none" src="images/info-padrela-mobile.png" alt="" />
         </div>
         <div className="contato">
-            <div className="contato-title">Entre em Contato</div>
+            <div className="contato-title linearTitle" data-aos="fade-up" data-aos-delay="500">Entre em Contato</div>
             <div className="redes-sociais row">
-                <div className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3">
+                <div className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-right" data-aos-delay="500">
                     <img className="rede-img" src="images/face-padrela.png" alt="Logo Instagram" />
                     <p>@padrela_santos</p>
                 </div>
-                <div className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3">
+                <div className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-up" data-aos-delay="500">
                     <img className="rede-img" src="images/insta-padrela.png" alt="Logo Instagram" />
                     <p>@padrela_santos</p>
                 </div>
-                <div className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3">
+                <div className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-left" data-aos-delay="500">
                     <img className="rede-img" src="images/whats-padrela.png" alt="Logo Instagram" />
                     <p>(13) 3261-2990</p>
                 </div>
             </div>
         </div>
-        <div className="footer">
+        <div className="footer" data-aos="fade-up">
             <img className='img-logo' src="images/padrela-logo.png" alt="" />
             <span className="judson">PADRELA</span>
             <img className="wport-logo" src="images/wport-logo.png" alt="" />
