@@ -113,19 +113,21 @@ export function InfoPadrela() {
         </div>
         <div className="contato">
             <div className="contato-title linearTitle" data-aos="fade-up" data-aos-delay="500">Entre em Contato</div>
-            <div className="redes-sociais row">
-                <div className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-right" data-aos-delay="500">
-                    <img className="rede-img" src="images/face-padrela.png" alt="Logo Instagram" />
+            <div className="redes-sociais row" onClick={() => window.open('https://www.facebook.com/padrela.santos/?locale=pt_BR', '_blank')}>
+                <button className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-right" data-aos-delay="500">
+                    <img className="rede-img" src="images/face-padrela.png" alt="Logo Facebook" />
                     <p>@padrela_santos</p>
-                </div>
-                <div className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-up" data-aos-delay="500">
+                </button>
+                <button className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-up" data-aos-delay="500" onClick={() => window.open('https://www.instagram.com/padrela_santos', '_blank')}>
                     <img className="rede-img" src="images/insta-padrela.png" alt="Logo Instagram" />
                     <p>@padrela_santos</p>
-                </div>
-                <div className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-left" data-aos-delay="500">
-                    <img className="rede-img" src="images/whats-padrela.png" alt="Logo Instagram" />
-                    <p>(13) 3261-2990</p>
-                </div>
+                </button>
+                <button className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-left" data-aos-delay="500"
+                    onClick={() => window.open('https://wa.me/5513991219009?text=Olá,%20gostaria%20de%20conhecer%20mais%20sobre%20o%20Padrela.', '_blank')}
+                >
+                    <img className="rede-img" src="images/whats-padrela.png" alt="Logo Whatsapp" />
+                    <p>(13) 99121-9009</p>
+                </button>
             </div>
         </div>
         <div className="footer" data-aos="fade-up">
