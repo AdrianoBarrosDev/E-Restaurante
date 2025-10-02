@@ -167,7 +167,15 @@ export function BannerTop() {
                             <div className="abas">
                                 <button className="aba-button ativo" onClick={() => window.location.href = '/'}>Conhecer</button>
                                 <button className="aba-button" onClick={() => window.location.href = '/cardapio'}>Cardápio</button>
-                                <button className="aba-button">Contato</button>
+                                <button
+                                    className="aba-button"
+                                    onClick={() => {
+                                        const contatoEl = document.getElementById("contato");
+                                        if (contatoEl) contatoEl.scrollIntoView({ behavior: "smooth" });
+                                    }}
+                                    >
+                                    Contato
+                                    </button>
                             </div>
                             
                         </div>

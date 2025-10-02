@@ -111,7 +111,7 @@ export function InfoPadrela() {
             <img className="info-img d-none d-sm-block" src="images/info-padrela.png" alt="" />
             <img className="info-img d-block d-sm-none" src="images/info-padrela-mobile.png" alt="" />
         </div>
-        <div className="contato">
+        <div className="contato" id="contato">
             <div className="contato-title linearTitle" data-aos="fade-up" data-aos-delay="500">Entre em Contato</div>
             <div className="redes-sociais row" onClick={() => window.open('https://www.facebook.com/padrela.santos/?locale=pt_BR', '_blank')}>
                 <button className="card-contato col-12 col-sm-8 col-lg-4 col-xxl-3" data-aos="fade-right" data-aos-delay="500">
